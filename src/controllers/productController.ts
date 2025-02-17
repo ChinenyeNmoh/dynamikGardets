@@ -1,4 +1,4 @@
-import Product from '../models/productModel.ts';
+import Product from '../models/productModel.js';
 import { Request, Response } from "express";
 import { Types } from 'mongoose';
 import { cloudinaryUploadImage, deleteImage } from '../utils/cloudinary.js';

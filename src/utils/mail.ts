@@ -1,6 +1,5 @@
 import nodemailer from "nodemailer";
 import rateLimit from "express-rate-limit";
-import { Request, Response, NextFunction } from "express";
 import {User} from  '../type/userTypes'
 
 

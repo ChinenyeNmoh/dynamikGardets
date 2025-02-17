@@ -5,18 +5,18 @@ import express from "express";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import cors from "cors";
-import { notFound, errorHandler } from "./src/middlewares/errorMiddleware.ts";
-import connectDB from "./src/config/db.js";
+
+import connectDB from "./config/db.js";
 import cookieParser from "cookie-parser";
-import userRoute from "./src/routes/userRoute.ts";
-import categoryRoute from "./src/routes/categoryRoute.ts";
-import productRoute from "./src/routes/productRoute.ts";
+import userRoute from "./routes/userRoute.js";
+import categoryRoute from "./routes/categoryRoute.js";
+import productRoute from "./routes/productRoute.js";
+import { notFound } from "./middlewares/errorMiddleware.js";
 
 dotenv.config();
 
 const port = process.env.PORT || 5000;
-
-const app = express();
+ const app = express();
 
 connectDB();
 
@@ -52,10 +52,12 @@ app.use("/api/users", userRoute);
 app.use("/api/categories", categoryRoute);
 app.use("/api/products", productRoute);
 
-// Error handling middleware
 app.use(notFound);
-//app.use(errorHandler);
+
 
 app.listen(port, () => {
   console.log(`app is running on port ${port}`);
 });
+
+
+export default app;

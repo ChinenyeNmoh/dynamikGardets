@@ -6,8 +6,8 @@ import { registerUser
     resetPassword,
      updatePassword, 
      logOut
- } from '../controllers/userController.ts';
-import { protect,  ensureGuest, validateId } from '../middlewares/authMiddleware.ts';
+ } from '../controllers/userController.js';
+import { protect,  ensureGuest, validateId } from '../middlewares/authMiddleware.js';
 const router = express.Router();
 // User routes
 router.post('/register', ensureGuest, registerUser);

@@ -2,9 +2,9 @@ import { Request,Response } from "express";
 import User from "../models/userModel.js";
 import { v4 as uuidv4 } from 'uuid';
 import { emailVerificationTemplate, sendEmail, passwordResetTemplate } from "../utils/mail.js";
-import Token from '../models/tokenModel.ts';
+import Token from '../models/tokenModel.js';
 import bcrypt from "bcryptjs";
-import generateToken from "../utils/generateToken.ts";
+import generateToken from "../utils/generateToken.js";
 
 // Register a new user
 const registerUser = async (req: Request, res: Response): Promise<void>  => {

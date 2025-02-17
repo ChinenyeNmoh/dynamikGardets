@@ -2,5 +2,5 @@
   "watch": ["server.ts", "src"],
   "ext": "ts,json",
   "ignore": ["node_modules"],
-  "exec": "node --loader ts-node/esm server.ts"
+  "exec": "node --loader ts-node/esm --no-warnings src/server.ts"
 }

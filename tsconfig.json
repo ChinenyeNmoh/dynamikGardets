@@ -7,13 +7,8 @@
       "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
       "strict": false, // Enables strict type-checking
       "skipLibCheck": true, // Skip type-checking declaration files (faster builds)
-      "outDir": "./dist", // Specifies output directory for compiled files
-      "baseUrl": "./",
-      "paths": {
-        "*": ["node_modules/*"]
-      },
-      "allowImportingTsExtensions": true, // Allows importing TypeScript files without specifying the extension
-      "noEmit": true, // Do not emit outputs
-    },
-    "include": ["*.ts","src/**/*"] 
+      "outDir": "./dist",                 // Output directory for compiled files
+      "rootDir": "./", 
+      
+    }
   }
