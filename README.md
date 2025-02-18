@@ -12,3 +12,43 @@ The Dynamik Gadgets API provides secure user authentication via JWT tokens and e
 - Programming Language: TypeScript
 
 
+## Getting Started
+
+To get started with this project, follow the steps below:
+
+### Installation
+
+1. Clone the repository.
+
+   ```sh
+   https://github.com/ChinenyeNmoh/dynamikGardets.git
+
+   ```
+
+2. Install the required packages.
+
+   ```sh
+   npm install package.json
+   ```
+
+
+
+### Start the application for development.
+
+```sh
+npm run dev 
+
+```
+
+## Deployment
+
+(https://dynamikgardets.onrender.com)
+
+## postman
+(https://www.postman.com/zestful-blend-api/dynamikgadgets/collection/kudpvvv/products)
+
+
+
+## Author
+
+- Chinenye Nmoh [Github](https://github.com/ChinenyeNmoh/) / [Linkedin](https://www.linkedin.com/in/chinenye-nmoh-88479699/) / [Email](chinenyeumeaku@gmail.com)
